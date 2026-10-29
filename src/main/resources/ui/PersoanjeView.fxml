@@ -1,16 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.Practica_crud_mongodb_peliculas.Controller.PersonajeController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="566.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="26.0" layoutY="14.0" text="Personajes de películas infantiles" />
+      <TableView layoutX="26.0" layoutY="54.0" prefHeight="241.0" prefWidth="554.0">
+        <columns>
+          <TableColumn prefWidth="97.0" text="C1" />
+          <TableColumn prefWidth="79.0" text="C2" />
+            <TableColumn prefWidth="136.0" text="C2" />
+            <TableColumn prefWidth="125.0" text="C2" />
+            <TableColumn prefWidth="116.0" text="C2" />
+        </columns>
+      </TableView>
+      <Label layoutX="40.0" layoutY="322.0" text="Label" />
+      <Label layoutX="40.0" layoutY="364.0" text="Label" />
+      <Label layoutX="40.0" layoutY="405.0" text="Label" />
+      <Label layoutX="40.0" layoutY="444.0" text="Label" />
+      <Label layoutX="40.0" layoutY="484.0" text="Label" />
+      <TextField layoutX="98.0" layoutY="318.0" prefHeight="25.0" prefWidth="483.0" />
+      <TextField layoutX="98.0" layoutY="360.0" prefHeight="25.0" prefWidth="483.0" />
+      <TextField layoutX="98.0" layoutY="401.0" prefHeight="25.0" prefWidth="483.0" />
+      <TextField layoutX="98.0" layoutY="440.0" prefHeight="25.0" prefWidth="483.0" />
+      <TextField layoutX="98.0" layoutY="480.0" prefHeight="25.0" prefWidth="483.0" />
+      <Button layoutX="34.0" layoutY="520.0" mnemonicParsing="false" text="Button" />
+      <Button layoutX="113.0" layoutY="520.0" mnemonicParsing="false" text="Button" />
+      <Button layoutX="184.0" layoutY="520.0" mnemonicParsing="false" text="Button" />
+      <Button layoutX="251.0" layoutY="520.0" mnemonicParsing="false" text="Button" />
+   </children>
+</AnchorPane>

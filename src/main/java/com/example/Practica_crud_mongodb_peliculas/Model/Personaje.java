@@ -3,7 +3,7 @@ package com.example.Practica_crud_mongodb_peliculas.Model;
 import com.google.gson.annotations.SerializedName;
 
 public class Personaje {
-    @SerializedName("_id");
+    @SerializedName("_id")
     private int id;
     private String nombre;
     private String creadorNombre;
