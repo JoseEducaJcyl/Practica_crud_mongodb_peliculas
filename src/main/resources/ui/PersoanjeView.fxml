@@ -6,33 +6,38 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="566.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="566.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26"
+            fx:controller="com.example.Practica_crud_mongodb_peliculas.Controller.PersonajeController">
    <children>
-      <Label layoutX="26.0" layoutY="14.0" text="Personajes de películas infantiles" />
-      <TableView layoutX="26.0" layoutY="54.0" prefHeight="241.0" prefWidth="554.0">
+      <Label layoutX="26.0" layoutY="14.0" text="Personajes de películas infantiles">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <TableView fx:id="tablaPersonajes" layoutX="26.0" layoutY="54.0" prefHeight="241.0" prefWidth="554.0">
         <columns>
-          <TableColumn prefWidth="97.0" text="C1" />
-          <TableColumn prefWidth="79.0" text="C2" />
-            <TableColumn prefWidth="136.0" text="C2" />
-            <TableColumn prefWidth="125.0" text="C2" />
-            <TableColumn prefWidth="116.0" text="C2" />
+          <TableColumn fx:id="colId" prefWidth="97.0" text="ID" />
+          <TableColumn fx:id="colNombre" prefWidth="79.0" text="Nombre" />
+            <TableColumn fx:id="colCreadorNombre" prefWidth="136.0" text="Creador (nombre)" />
+            <TableColumn fx:id="colCreadorApellido" prefWidth="125.0" text="Creador (apellido)" />
+            <TableColumn fx:id="colMascota" prefWidth="116.0" text="Mascota" />
         </columns>
       </TableView>
-      <Label layoutX="40.0" layoutY="322.0" text="Label" />
-      <Label layoutX="40.0" layoutY="364.0" text="Label" />
-      <Label layoutX="40.0" layoutY="405.0" text="Label" />
-      <Label layoutX="40.0" layoutY="444.0" text="Label" />
-      <Label layoutX="40.0" layoutY="484.0" text="Label" />
-      <TextField layoutX="98.0" layoutY="318.0" prefHeight="25.0" prefWidth="483.0" />
-      <TextField layoutX="98.0" layoutY="360.0" prefHeight="25.0" prefWidth="483.0" />
-      <TextField layoutX="98.0" layoutY="401.0" prefHeight="25.0" prefWidth="483.0" />
-      <TextField layoutX="98.0" layoutY="440.0" prefHeight="25.0" prefWidth="483.0" />
-      <TextField layoutX="98.0" layoutY="480.0" prefHeight="25.0" prefWidth="483.0" />
-      <Button layoutX="34.0" layoutY="520.0" mnemonicParsing="false" text="Button" />
-      <Button layoutX="113.0" layoutY="520.0" mnemonicParsing="false" text="Button" />
-      <Button layoutX="184.0" layoutY="520.0" mnemonicParsing="false" text="Button" />
-      <Button layoutX="251.0" layoutY="520.0" mnemonicParsing="false" text="Button" />
+      <Label layoutX="14.0" layoutY="322.0" text="ID" />
+      <Label layoutX="13.0" layoutY="364.0" text="Nombre" />
+      <Label layoutX="14.0" layoutY="405.0" text="Creador (Nombre)" />
+      <Label layoutX="12.0" layoutY="444.0" text="Creador (Apellido)" />
+      <Label layoutX="12.0" layoutY="484.0" text="Mascota" />
+      <TextField fx:id="txtId" layoutX="133.0" layoutY="318.0" prefHeight="25.0" prefWidth="448.0" />
+      <TextField fx:id="txtNombre" layoutX="133.0" layoutY="360.0" prefHeight="25.0" prefWidth="448.0" />
+      <TextField fx:id="txtCreadorNombre" layoutX="133.0" layoutY="401.0" prefHeight="25.0" prefWidth="448.0" />
+      <TextField fx:id="txtCreadorApellido" layoutX="133.0" layoutY="440.0" prefHeight="25.0" prefWidth="448.0" />
+      <TextField fx:id="txtMascota" layoutX="133.0" layoutY="480.0" prefHeight="25.0" prefWidth="448.0" />
+      <Button fx:id="btnInsertar" onAction="#onInsertar" layoutX="29.0" layoutY="520.0" mnemonicParsing="false" text="Insertar" />
+      <Button fx:id="btnActualizar" onAction="#onActualizar" layoutX="99.0" layoutY="520.0" mnemonicParsing="false" text="Actualizar" />
+      <Button fx:id="btnEliminar" onAction="#onEliminar" layoutX="184.0" layoutY="520.0" mnemonicParsing="false" text="Eliminar" />
+      <Button fx:id="btnLimpiar" onAction="#onLimpiar" layoutX="259.0" layoutY="520.0" mnemonicParsing="false" text="Limpiar" />
    </children>
 </AnchorPane>

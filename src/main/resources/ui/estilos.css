@@ -1,0 +1,59 @@
+/* =========================================
+   ESTILOS DE LA TABLA
+   ========================================= */
+
+.table-view .column-header-background {
+    -fx-background-color: #3b4c8c;
+}
+
+.table-view .column-header,
+.table-view .column-header .label {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER-LEFT;
+}
+
+/* Filas de la tabla */
+.table-view .table-row-cell {
+    -fx-background-color: white;
+    -fx-border-color: transparent transparent #e0e0e0 transparent;
+}
+
+.table-view {
+    -fx-background-color: transparent;
+    -fx-border-color: #d0d0d0;
+    -fx-border-width: 1px;
+}
+
+/* =========================================
+   ESTILOS DE LOS BOTONES
+   ========================================= */
+
+#btnInsertar {
+    -fx-background-color: #2E8B57; /* Verde */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+#btnActualizar {
+    -fx-background-color: #1E90FF; /* Azul */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+#btnEliminar {
+    -fx-background-color: #DC143C; /* Rojo */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+#btnLimpiar {
+    -fx-background-color: #A9A9A9; /* Gris */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}

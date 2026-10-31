@@ -1,8 +1,10 @@
 package com.example.Practica_crud_mongodb_peliculas.DAO;
 
 import com.example.Practica_crud_mongodb_peliculas.Model.Personaje;
-import javafx.collections.ObservableList;
 
+import java.util.List;
+
+// Interfaz con los metodos DAO sin implementar
 public interface IPersonajeDAO {
     void insertar(Personaje personaje) throws Exception;
 
@@ -12,5 +14,5 @@ public interface IPersonajeDAO {
 
     Personaje buscarPorId(int id);
 
-    ObservableList<Personaje> listarTodos();
+    List<Personaje> listarTodos();
 }

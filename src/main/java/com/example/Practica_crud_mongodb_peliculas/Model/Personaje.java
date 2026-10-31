@@ -1,9 +1,8 @@
 package com.example.Practica_crud_mongodb_peliculas.Model;
 
-import com.google.gson.annotations.SerializedName;
 
+// Clase Personaje como modelo de los objetos
 public class Personaje {
-    @SerializedName("_id")
     private int id;
     private String nombre;
     private String creadorNombre;
@@ -59,12 +58,5 @@ public class Personaje {
 
     public void setMascota(String mascota) {
         this.mascota = mascota;
-    }
-
-    @Override
-    public String toString() {
-        return "[" + id + "] " + nombre
-                + " | Creador: " + creadorNombre + " " + creadorApellido
-                + " | Mascota: " + mascota;
     }
 }
